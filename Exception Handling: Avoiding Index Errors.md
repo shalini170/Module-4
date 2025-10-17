@@ -12,14 +12,22 @@ To write a Python program that handles an **IndexError** when trying to access a
 
 ## 🧾 Program
 ```
-data=eval(input())
-sort=dict(sorted(data.items()))
-print("Keys and Values sorted in alphabetical order by the key")
-for key, value in sort.items():
-    print(f"({key}, {value}) ",end="")
+try:
+    # Taking 3 elements input from the user
+    L = []
+    for i in range(3):
+        item = ['laptop','mobile','pen']
+        L.append(item)
+
+    # Trying to access index 4
+    print(L[4])
+
+except IndexError:
+    print("check index range")
+
 ```
 ## Output
-<img width="1336" height="145" alt="image" src="https://github.com/user-attachments/assets/0dd79473-fda4-4a88-9ef2-22b612963736" />
+<img width="1266" height="342" alt="image" src="https://github.com/user-attachments/assets/a5f5dfe8-ce12-4550-9a40-66e06e6bcc9e" />
 
 ## Result
 Thus the program executed successfully.
