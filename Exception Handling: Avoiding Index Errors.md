@@ -11,8 +11,15 @@ To write a Python program that handles an **IndexError** when trying to access a
 3. Print the result based on whether the index access succeeds or fails.
 
 ## 🧾 Program
-Add code here
-
+```
+data=eval(input())
+sort=dict(sorted(data.items()))
+print("Keys and Values sorted in alphabetical order by the key")
+for key, value in sort.items():
+    print(f"({key}, {value}) ",end="")
+```
 ## Output
+<img width="1336" height="145" alt="image" src="https://github.com/user-attachments/assets/0dd79473-fda4-4a88-9ef2-22b612963736" />
 
 ## Result
+Thus the program executed successfully.
